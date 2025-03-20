@@ -27,11 +27,11 @@ public class App {
             ps.genero = sc.next().charAt(0);
             System.out.print("Tem convenio?. Digite 'sim' ou 'não': ");
             tem_convenio = sc.next();
-            if (tem_convenio == "sim") {
+            if (tem_convenio.equals("sim")) {
                 System.out.print("Digite o nome do convênio: ");
                 ps.convenio = sc.next();
             }else{
-                break;
+                System.out.println("Sem convênio registrado.");
             }
             System.out.print("Deseja cadastrar outro paciente (s/n): ");
             resp = sc.next().charAt(0);
